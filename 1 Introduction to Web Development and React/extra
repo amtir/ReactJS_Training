@@ -1,0 +1,193 @@
+
+
+
+07-12-2024  
+Module1: Introduction to Web Development and React
+
+Install VS code & NodeJS 
+
+https://code.visualstudio.com/ 
+https://nodejs.org/en 
+https://github.com/
+https://git-scm.com/downloads 
+https://www.postman.com/downloads/ 
+https://github.com/Aakashdeveloper > Follow 
+
+NPM Node Package Manager 
+https://www.npmjs.com/ 
+
+
+
+
+//VS-Code extension
+> Vscode-icons
+> githistory
+> gitlens
+> Code Spell Checker
+> Tabnine or Code Pilot
+
+
+postman
+akram.mtir@gmail.com
+znHMxbB6aVj7y($3F+Lh
+
+> node -v
+v20.17.0
+
+> git version
+git version 2.41.0.windows.3
+
+
+> npm -v
+10.8.2
+
+
+MERN   Stack  ?    
+
+Mongo
+Express
+React
+NodeJS
+
+
+How secure are these packages? How to check security?
+NPM  => Nexus Repos 
+or
+sysdig scan  https://docs.sysdig.com/en/  
+
+
+JSON
+JavaScript Object notation 
+
+package.json 
+> Entry point to the app
+> All the packages install
+> All the command (start, test, build)
+> Meta Data (name, version, description)
+
+Steps 1:
+generate package.json
+npm init
+answer all questions
+type yes
+
+Step2: to install package
+> npm i packageName / npm install packageName
+ex: npm i axios 
+
+node_modules > contains all the packages we have installed
+package-lock.json > dependency tree , which package depends on what. (internally used by npm)
+
+
+
+major.minor.patch
+ "^1.7.9" (caret)(minor) 
+ 1.7.19, 1.8.2, 1.9.2,1.7.24 > yes
+ 2.0.0 > no
+
+1.7.9  only this version 
+
+~1.7.9 (tilde) -> patch 
+1.7.19,1.7.24 > yes
+1.9.2,1.8.2,2.0.0 > no
+
+
+///step to generate react app
+> go inside the folder using terminal
+> npx create-react-app appname
+
+
+
+
+
+08-12-2024
+
+Local dependency 
+> local to the folder 
+can only be used in the same application 
+for each application we need to install again 
+
+Global dependency 
+Install in your laptop
+need admin permission to install
+only used before app start/generate the app
+
+
+Windows 
+(one time)
+Open cmd as administrator 
+npm i -g -create-react-app
+close cmd
+
+for evert app 
+open cmd 
+go insde the folder where you want app
+create-react-app appname
+
+    "react": "^19.0.0",   >   
+    "react-dom": "^19.0.0",  > help to display/render content in 
+    "react-scripts": "5.0.1"  >  help to compile and run the app
+
+
+
+React is a Javascript library which help to build single page application using component based structure 
+
+Questions
+Library vs Framework ? 
+
+React 2015, 2016 10 years back 
+script tags , to import library   
+
+Angular is Framework, heavier. 
+
+Single page
+Header, Footer Structure 
+Home, About, Content pages 
+Only the necessary component parts are updated  
+
+Concept the Virtual Dom 
+Reconciliation algorithm 
+=> In-Memory-DOM is compared with the loaded DOM and replace only the difference. 
+
+SPA  Single Page Application 
+Only the content is updated 
+
+Return only one element
+1 Empty tag
+2 React.Fragment
+3 Fragment 
+import React, {Fragment} from 'react'
+
+
+////////////////////////////
+
+Read about the JavaScript methods
+.map
+.filter
+
+state  
+> act as a local variable
+Every variable will have its own state
+could be updated 
+and with every state change -> components will re-render 
+Any Data interaction will happen through state
+
+props 
+> is use to share data between components
+we can only share data between nested component
+
+class Component (No more used by companies)
+> logical 
+> all logic api calling, state, handle events
+
+functional Component
+> dumb component
+> display
+
+hooks ( functional component)
+>
+
+Summary
+Class Components: Becoming less relevant due to verbosity and complexity.
+Functional Components with Hooks: Modern, simple, and powerful, allowing state and side-effect management without lifecycle complexities.
+Industry Trend: Companies and developers are overwhelmingly adopting functional components, making React development more intuitive and efficient.
