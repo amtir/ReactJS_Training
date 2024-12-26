@@ -1,0 +1,296 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://www.postman.com/downloads/ > Install
+https://github.com/ > Signup
+https://github.com/Aakashdeveloper > Follow
+
+//extension
+> Vscode-icons
+> githistory
+> gitlens
+> Code Spell Checker
+> Tabnine
+
+//Prerequest
+HTML
+CSS
+Basic Javascript
+(ifelse,function,loop,array,object,variable)
+
+
+open source
+
+NPM
+> Node Package Manager
+
+
+NPM
+ ||
+ \/
+Nexus Repo
+3,370,501
+
+
+--------------
+JSON
+> JavaScript Object notation
+
+let movieName = "Avengers"
+let movieRating = "4.5"
+let movieType = "Action"
+
+let movieName1 = "Jab We Met"
+let movieRating1 = "4.8"
+let movieType1 = "Romantic"
+
+let movie= {
+    name:"Avengers",
+    rating:"4.5",
+    type:"Action"
+}
+
+let movie = [
+    {
+        "name":"Avengers",
+        "rating":"4.5",
+        "type":"Action"
+    },
+    {
+        "name":"Jab We Met",
+        "rating":4.8,
+        "type":"Romatic"
+    }  
+]
+
+package.json
+> Entry point to the app
+> All the packages install
+> all the command (start,test,build)
+> Meta Data(name,verison,description)
+
+//Step to generate package.json
+** NodeJs must be installed
+> go inside the folder using terminal
+> npm init /npm init -y
+> answer all questions
+> type yes
+
+//step to install package
+> go inside the folder using terminal
+> npm i packageName / npm install packageName
+npm i axios
+
+node_modules> conatins all the packages we have installed
+package-lock.json > Dependency tree
+
+major.minor.patch
+ "^1.7.9" (caret)(minor) 
+ 1.7.19, 1.8.2, 1.9.2,1.7.24 > yes
+ 2.0.0 > no
+
+
+major.minor.patch
+"~1.7.9" (tilde)(patch)
+1.7.19,1.7.24 > yes
+1.9.2,1.8.2,2.0.0 > no
+
+
+////step to generate react app
+> go inside the folder using terminal
+> npx create-react-app appname
+
+
+//local dependency
+> Local to the folder
+> can only be used in the same application
+> for each application we to install again
+
+//global dependency
+> Installed in your laptop
+> need admin permission to install
+> only used before app start/generate the app
+
+//window
+(one time)
+> open cmd as administrator
+> npm i -g create-react-app
+> close cmd
+
+(for every app)
+> open cmd
+> go inside the folder where you want app
+> create-react-app aapname
+
+//Mac/linux
+> open terminal
+> sudo npm i -g create-react-app
+> close terminal
+
+(for every app)
+> open terminal
+> go inside the folder where you want app
+> create-react-app appname
+
+// start app
+> npm start
+
+
+react-script> help to complie and run the app
+react-dom > help to display/render content in browser
+react  > main library
+
+
+React
+> Is a Javascript library which help to build single page application (SPA)
+using component based structure
+
+Virtual DOM
+Reconciliation algo
+
+
+
+function add(){
+    let a = [1,2]
+    return a
+}
+
+
+add()
+
+///////////////
+(javascript)
+.map
+.filter
+
+state
+> Act like a local variable
+> Every component will have its own state
+> We can update the state
+> With every State change Component will re-render
+> Any Data interaction will happen through state
+
+props
+> is use to share data between componets
+> we can only share data between nested component
+
+
+class Component 
+> logical
+> all logic api calling,state, handle events
+
+
+functional component
+> dumb component
+> display
+
+
+hooks
+>
+
+{
+    city:city
+}
+{
+    city
+}
+
+var a = [2,4,5,6,7,9]
+a.map((data) => {return data*2})
+[4, 8, 10, 12, 14, 18]
+
+var a = [2,4,5,6,7,9,1,6,3,8]
+a.filter((data) => {return data>5})
+[6, 7, 9, 6, 8]
+
+var a = [2,4,5,6,7,9]
+a.map((data) => {return data>2})
+[false, true, true, true, true, true]
+
+var a = ["Delhi","Venice","Amsterdam","Innsburg"]
+
+a.indexOf('Delhi')
+0
+a.indexOf('Innsburg')
+3
+a.indexOf('Boston')
+-1
+a.indexOf('Cincinnati')
+-1
+
+
+parent to child > props
+child to parent > props with callback
+
+# child to parent
+parent 
+define function
+
+child 
+call the function
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+3
+
+//concat
+var a = "Amsterdam"
+var b = "I live in "+a
+"I live in Amsterdam"
+
+// string literal
+var a = "Amsterdam"
+var b = `I live in ${a}`
+"I live in Amsterdam"
+
+useState
+
+
+github profile
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/refs/heads/master/README.md
+
+
+param
+> pass after /
+> We need to define in the url
+> Once defined we need pass it
+> Use for passing limited values
+
+queryParam
+> pass after ?  
+> No need to define
+> No Such complusion
+> can be use to pass multiple
+
+
+(get) cityname >           http://3.17.216.66:4000/location
+(get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch>         http://3.17.216.66:4000/quicksearch
+
+(get) onbasisofMeal >      http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter >      http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter >         http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >        http://3.17.216.66:4000/details/1
+(get) menu >               http://3.17.216.66:4000/menu/1
+
+(post) orderspage >        http://3.17.216.66:4000/menuItem
+                           body [1,4,5]
+(post)placeOrder >        
+
+(get) allorder>            
+       
+(get) restaurants>         http://3.17.216.66:4000/restaurants
+
+// when page load happen
+componentDidMount
+
+// looking for state
+componentDidUpdate
+
+// when leave the component
+componentWillUnMount
